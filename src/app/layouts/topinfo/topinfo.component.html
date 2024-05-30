@@ -1,0 +1,43 @@
+<div class="flex items-center text-[12px] h-[30px] px-[35px] justify-between bg-[#F0F3F7] text-gray font-normal">
+    <button class="flex items-center gap-[5px] hover:text-text-hover">
+        <ng-icon name="bootstrapPhone" class="text-[20px]"/>
+        <p>Download {{ merek }} App</p>
+    </button>
+    <div class="flex gap-[35px] max-hmd:hidden">
+        <button class="hover:text-text-hover">
+            Tentang {{ merek }}
+        </button>
+        <button class="hover:text-text-hover">
+            Mitra {{ merek }}
+        </button>
+        <button class="hover:text-text-hover">
+            Mulai Berjualan
+        </button>
+        <button class="hover:text-text-hover">
+            Promo
+        </button>
+        <button class="hover:text-text-hover">
+            {{ merek }} Care
+        </button>
+    </div>
+    <button (click)="openBurger()" class="hover:text-text-hover hmd:hidden">
+        burger
+    </button>
+</div>
+<div class="w-full absolute bg-[#F0F3F7] px-[35px] hmd:hidden flex max-md:flex-col items-start gap-[10px] text-gray text-[12px] pt-[5px] pb-[10px]" *ngIf="setBurger">
+    <button class="hover:text-text-hover">
+        Tentang {{ merek }}
+    </button>
+    <button class="hover:text-text-hover">
+        Mitra {{ merek }}
+    </button>
+    <button class="hover:text-text-hover">
+        Mulai Berjualan
+    </button>
+    <button class="hover:text-text-hover">
+        Promo
+    </button>
+    <button class="hover:text-text-hover">
+        {{ merek }} Care
+    </button>
+</div>

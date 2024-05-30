@@ -1,0 +1,65 @@
+<div class="bg-white shadow-[0_1px_6px_0_rgba(0,0,0,_0.12)] flex flex-col gap-[40px] w-full p-[15px] rounded-xl">
+    <div class="grid grid-cols-2 max-lg:grid-cols-1 gap-[20px]">
+        <div class="flex flex-col gap-[20px] overflow-x-auto hidden-scroll">
+            <p class="text-[20px] font-bold">Kategori Pilihan</p>
+                <div class="flex items-center  gap-[15px] overflow-x-scroll hidden-scroll">
+                    <button class="w-[128px] flex-shrink-0 overflow-hidden border-opacity-10 h-[128px] border border-black rounded-md" *ngFor="let img of imgs">
+                        <img alt="" [src]="img" class="w-full h-full">
+                    </button>
+                </div>
+        </div>
+        <div class="flex flex-col gap-[20px]">
+            <div class="flex items-center gap-[10px]">
+                <p class="text-[20px] font-bold">Top Up & Tagihan</p>
+                <button class="text-[#00AA5B] font-bold text-[14px]">
+                    lihat semua
+                </button>
+            </div>
+            <div class="border border-black py-[20px] border-opacity-10 rounded-md h-full flex items-center justify-center">
+                <!-- <div class="flex flex-col justify-between">
+                    <div class="grid grid-cols-6 gap-[10px]  w-full h-full">
+                        <button>
+                            Pulsa
+                        </button>
+                        <button>
+                            Paket Data
+                        </button>
+                        <button>
+                            Flight
+                        </button>
+                        <button>
+                            Listrik PLN
+                        </button>
+                        <button>
+                            more
+                        </button>
+                    </div>
+                    <div class="flex">
+                        <div class="w-full">
+                            <p>Nomor Telephone</p>
+                            <input type="text" placeholder="Masukan Nomor Telephone">
+                        </div>
+                        <div class="w-full">
+                            <p>Nominal</p>
+                            <select name="" id="">
+                                <option value="">idk</option>
+                            </select>
+                        </div>
+                        <button>
+                            beli
+                        </button>
+                    </div>
+                </div> -->
+                Comming Soon
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-auto flex gap-[10px] overflow-x-auto hidden-scroll">
+        <button *ngFor="let one of ones" class="border flex-shrink-0 text-[14px] gap-[10px] flex items-center w-auto border-black border-opacity-20 p-[13px] rounded-2xl">
+            <img [src]="one.img" alt="" srcset="" class="w-[24px]">
+            <p class="whitespace-nowrap">
+                {{ one.name }}
+            </p>
+        </button>
+    </div>
+</div>
